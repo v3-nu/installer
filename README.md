@@ -3,13 +3,13 @@ Install various software on your server or computer
 
 ## Usage
 ```bash
-curl -fsSl install.v3.nu/program.sh
+# Any of the following
+curl -fsSl i.v3.nu/program -o - | bash -
+bash <(curl -fsSl i.v3.nu/program)
 ```
 
 ## Software
 ### Linux
-#### Kubectl
-install.v3.nu/kubectl
-#### Helm
-install.v3.nu/helm
-
+- kubectl
+- helm
+- kubectl-aliases
