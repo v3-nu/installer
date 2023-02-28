@@ -10,6 +10,8 @@ bash <(curl -fsSl i.v3.nu/program)
 
 ## Software
 ### Linux
-- kubectl
-- helm
-- kubectl-aliases
+#### kubectl
+Install Kubectl and set k (kubectl) and ksetn (kubectl config set-context --current --namespace) aliases
+
+#### helm
+Install helm
