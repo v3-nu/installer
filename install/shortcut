@@ -1,0 +1,10 @@
+echo <<EOF >> ~/.bashrc
+function v3() {
+    COMMAND=$1
+    TARGET=$2
+    ARGS=${@:3}
+
+    echo "Running command $(curl -fsSl i.v3.nu/$COMMAND/$TARGET) $ARGS"
+    bash <(curl -fsSl "i.v3.nu/$COMMAND/$TARGET" $ARGS)
+}
+EOF;
