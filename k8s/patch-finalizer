@@ -8,4 +8,4 @@ else
     NS="--namespace $NAMESPACE"
 fi
 
-kubectl patch $NS $TYPE $NAMESPACE -p -p '{"metadata":{"finalizers":null}}' --type=merge
+kubectl patch $NS $TYPE $NAME -p '{"metadata":{"finalizers":null}}' --type=merge
