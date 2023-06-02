@@ -9,3 +9,5 @@ function v3() {
 }
 
 EOF
+;
+echo "Success";
