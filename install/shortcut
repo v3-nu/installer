@@ -8,4 +8,4 @@ function v3() {
     bash <(curl -fsSl "i.v3.nu/$COMMAND/$TARGET" $ARGS)
 }
 
-EOF;
+EOF
