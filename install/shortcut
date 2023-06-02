@@ -7,4 +7,5 @@ function v3() {
     echo "Running command $(curl -fsSl i.v3.nu/$COMMAND/$TARGET) $ARGS"
     bash <(curl -fsSl "i.v3.nu/$COMMAND/$TARGET" $ARGS)
 }
-EOF;
+
+EOF
