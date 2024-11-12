@@ -1,0 +1,7 @@
+#!/bin/sh
+sudo apt-get update && sudo apt-get -y install gnupg2 apt-transport-https curl && \
+sudo curl https://pkg.cloudyne.io/debian/repository.key -o /etc/apt/trusted.gpg.d/cloudyne.asc && \
+echo "deb https://pkg.cloudyne.io/debian all main" | sudo tee /etc/apt/sources.list.d/cloudyne.list && \
+sudo apt-get update && \
+sudo apt -y install clycli && \
+echo 'alias cly="clycli"' >> ~/.bashrc
