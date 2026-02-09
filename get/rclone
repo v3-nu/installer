@@ -1,0 +1,14 @@
+#!/bin/bash
+PROCT=$(uname -m)
+
+if [ "$PROCT" = "x86_64" ]; then
+  wget -O rclone.zip https://downloads.rclone.org/rclone-current-linux-amd64.zip
+elif [ "$PROCT" = "aarch64" ]; then
+  wget -O rclone.zip https://downloads.rclone.org/rclone-current-linux-arm64.zip
+else
+  echo "Unsupported architecture: $PROCT"
+  exit 1
+fi
+
+# Unzip only rclone file
+unzip -j rclone.zip "rclone-*/rclone" -d ./rclone
